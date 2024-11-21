@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Consumindo minha API</title>
+</head>
+<body>
+    <button onclick="consultar()" >Consultar</button>
+    <script>
+        function consultar() {
+            fetch('http://localhost:3000/alunos')
+            .then(res => res.json())
+            .then(res => console.log(res));
+        }
+    </script>
+</body>
+</html>
